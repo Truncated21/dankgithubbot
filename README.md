@@ -1,6 +1,7 @@
 # dankgithubbot
 
 This is all about shit. Do not even try to open these files, better just **get a fork and stab your eyes out**. 
+*You've been warned.*
 
 ```
 [21:16] Truncated: Гринозник, спой Летова
