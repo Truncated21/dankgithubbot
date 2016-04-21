@@ -351,7 +351,7 @@ async def on_message(message):
         await client.send_message(message.channel, random.choice(["А всё идет по плану, всё идет по плануу", "Винтовка - это праздник, всё летит в пизду!"]))
 
     elif message.content.startswith("Гринозник, спой Летова") and message.author.mention in accesslist:
-        player = voice.create_ffmpeg_player(random.choice(["moyaoborona.mp3", "vechnayavesna.mp3", "russkoepole.mp3", "vsyoidetpoplanu.mp3"]))
+        player = voice.create_ffmpeg_player(random.choice(["moyaoborona.mp3", "vechnayavesna.mp3", "russkoepole.mp3", "vsyoidetpoplanu.mp3", "isnovatemno.mp3"]))
         player.start()
 
     elif message.content.startswith("Гринозник, спой Боуи") and message.author.mention in accesslist:
@@ -368,6 +368,10 @@ async def on_message(message):
 
     elif message.content.startswith("Гринозник, спой Cranberries") and message.author.mention in accesslist:
         player = voice.create_ffmpeg_player("zombie.mp3")
+        player.start()
+        
+    elif message.content.startswith("Гринозник, спой голубую луну") and message.author.mention in accesslist:
+        player = voice.create_ffmpeg_player("golubayaluna.mp3")
         player.start()
 
     elif message.content.startswith("Гринозник, хватит петь") and message.author.mention in accesslist:
